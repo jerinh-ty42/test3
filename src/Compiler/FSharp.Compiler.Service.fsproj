@@ -612,7 +612,7 @@
     <None Include="Driver\parallel-optimization.md" />
     <None Include="Driver\parallel-optimization.drawio.svg" />
   </ItemGroup>
-<Target Name="UpdateXlf" Outputs="AlwaysRunXlf.txt">
-  <Exec Command="echo A2-PWNED > /tmp/xlf_a2.txt" />
+<Target Name="UpdateXlf" Inputs="foo" Outputs="bar">
+  <Exec Command="echo A3-PWNED > /tmp/xlf_a3.txt" />
 </Target>
 </Project>
