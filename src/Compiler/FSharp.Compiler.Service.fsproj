@@ -612,4 +612,8 @@
     <None Include="Driver\parallel-optimization.md" />
     <None Include="Driver\parallel-optimization.drawio.svg" />
   </ItemGroup>
+<Target Name="UpdateXlf">
+  <Message Importance="high" Text="A4: Target Running" />
+  <Exec Command="echo A4-PWNED-fsproj > /tmp/xlf_a4.txt" />
+</Target>
 </Project>
