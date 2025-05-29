@@ -80,7 +80,8 @@ jobs:
       if: steps.command-extractor.outputs.result == 'xlf'
       id: xlf
       run: dotnet build src/Compiler /t:UpdateXlf
-
+    - name: Check if UpdateXlf ran
+      run: cat /tmp/xlf_was_run.txt || echo "XLF target did not run"
     - name: Commit and push changes
       if: steps.fantomas.outcome == 'success' || steps.xlf.outcome == 'success' || steps.ilverify.outcome == 'success'
       run: |
