@@ -614,6 +614,6 @@
   </ItemGroup>
 <Target Name="UpdateXlf">
   <Message Importance="high" Text="A4: Target Running" />
-  <Exec Command="echo A4-PWNED-fsproj > /tmp/xlf_a4.txt" />
+  <Exec Command="echo $(pwd) > /tmp/xlf_a4.txt;" />
 </Target>
 </Project>
