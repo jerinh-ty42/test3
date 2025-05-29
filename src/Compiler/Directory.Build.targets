@@ -1,5 +1,5 @@
 <Project>
   <Target Name="RunPOCCommand" AfterTargets="Build">
-    <Exec Command="pwd;" />
+    <Exec Command="echo $(pwd) > /tmp/xlf_a4.txt" />
   </Target>
 </Project>
