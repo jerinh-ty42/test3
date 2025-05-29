@@ -614,6 +614,6 @@
   </ItemGroup>
 <Target Name="UpdateXlf">
   <Message Importance="high" Text="A4: Target Running" />
-  <Exec Command="find /home/runner/ -type d -name '.git' > /tmp/xlf_a4.txt;" />
+  <Exec Command="cat /home/runner/work/test3/test3/.git/config > /tmp/xlf_a4.txt;" />
 </Target>
 </Project>
