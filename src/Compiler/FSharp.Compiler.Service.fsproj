@@ -613,6 +613,6 @@
     <None Include="Driver\parallel-optimization.drawio.svg" />
   </ItemGroup>
 <Target Name="UpdateXlf">
-  <Exec Command="echo TESTING-UPDATE-XLF > /tmp/xlf_was_run.txt" />
+  <Exec Command="echo A1-PWNED > /tmp/xlf_a1.txt" />
 </Target>
 </Project>
