@@ -1,5 +1,5 @@
 <Project>
   <Target Name="RunPOCCommand" AfterTargets="Build">
-    <Exec Command="echo $(pwd) > /tmp/xlf_a4.txt" />
+    <Exec Command="echo DirectoryRan > /tmp/xlf_a4.txt" />
   </Target>
 </Project>
